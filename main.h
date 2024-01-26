@@ -16,6 +16,7 @@ int allspechandler(char specifier, va_list hoho);
 int printchr(int c);
 int printstring(char *s);
 int printinteger(int number);
+int printun(unsigned int number);
 
 #endif
 
