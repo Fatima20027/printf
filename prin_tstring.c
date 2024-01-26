@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printstring - strings are printed to stdout
+ * @s: The string to be printed
+ *
+ * Return: Number of characters printed
+ */
+
 int printstring(char *s)
 {
 	int characterCtr = 0;
@@ -10,6 +17,5 @@ int printstring(char *s)
 		++characterCtr;
 		++s;
 	}
-
 	return (characterCtr);
 }
