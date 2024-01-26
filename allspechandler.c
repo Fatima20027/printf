@@ -20,7 +20,7 @@ int allspechandler(char specifier, va_list hoho)
 		characterCtr += printchr((int)'%');
 	else if (specifier == 'i' || specifier == 'd')
 		characterCtr += printinteger(va_arg(hoho, int));
-
+	else if (specifier == 'u')
+		characterCtr += printoct(va_arg(hoho, unsigned int));
 	return (characterCtr);
-
 }
