@@ -14,4 +14,6 @@ int allspechandler(char specifier, va_list hoho)
 
 	if (specifier == 'c')
 		characterCtr += printchr(va_arg(hoho, int));
+	else if (specifier == 's')
+		characterCtr += printstring(va_arg(hoho, char*));
 }
