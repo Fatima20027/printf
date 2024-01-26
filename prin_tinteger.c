@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * printinteger - Prints an integer to stdout
+ * printinteger - Prints an integer to the standard output.
  * @number: The integer to be printed
  *
- * Return: The number of characters printed
+ * Return: The number of characters are printed
  */
 
 int printinteger(int number)
