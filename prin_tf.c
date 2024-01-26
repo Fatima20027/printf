@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
-			characterCtr += allspechandler(*(++format), arguments);
+			characterCtr += allspechandler(*(++format), hoho);
 		}
 		else
 		{
@@ -22,4 +22,8 @@ int _printf(const char *format, ...)
 		}
 		++format;
 	}
+
+	va_end(hoho);
+
+	return (characterCtr);
 }
