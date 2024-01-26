@@ -6,6 +6,7 @@
 
 void _putchar(char c);
 int _printf(const char *format, ...);
+int allspechandler(char specifier, va_list hoho);
 
 #endif
 
