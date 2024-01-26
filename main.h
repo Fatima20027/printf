@@ -14,6 +14,7 @@ void _putchar(char c);
 int _printf(const char *format, ...);
 int allspechandler(char specifier, va_list hoho);
 int printchr(int c);
+int printstring(char *s);
 
 #endif
 
