@@ -18,4 +18,9 @@ int allspechandler(char specifier, va_list hoho)
 		characterCtr += printstring(va_arg(hoho, char*));
 	else if (specifier == '%')
 		_putchar('%');
+	else if (specifer == 'i' || specifier == 'd')
+		characterCtr += printinteger(va_ar(hoho, int));
+
+	return (characterCtr);
+
 }
