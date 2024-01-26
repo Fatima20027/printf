@@ -2,29 +2,32 @@
 
 int printinteger(int number)
 {
-	int characterCtr = 0;
-	char digit = 0;
+    int characterCtr = 0;
+	char digit;
 
-	if (number < 0)
-	{
-		_putchar('-');
-		number = -number;
-	}
 
-	if (num == INT_MIN) 
+    if (number < 0) 
 	{
-		characterCounter += write(1, "2147483648", 10);
-		return (characterCounter);
+        characterCtr += write(1, "-", 1);
+        number = -number;
     }
-	if (num / 10 != 0)
+
+	if (number == INT_MIN)
 	{
-		characterCtr += (printinteger / 10)
+		characterCtr += write(1, "2147483648", 10);
+		return (characterCtr);
+    }
+
+	if (number / 10 != 0)
+	{
+		characterCtr += printinteger(number / 10);
 	}
 
-	char digit = '0' + num % 10;
+
+	digit = '0' + number % 10;
 
 	characterCtr += write(1, &digit, 1);
 
-	return (charcterCtr);
-
+	return (characterCtr);
 }
+
