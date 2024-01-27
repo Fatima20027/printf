@@ -21,6 +21,7 @@ int printhexd(unsigned int number, int base, int uppercase);
 int printoct(unsigned int number);
 int printrev(char *string);
 int printrot(char *string);
+int printbin(unsigned int number);
 
 #endif
 
