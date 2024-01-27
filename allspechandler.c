@@ -26,6 +26,8 @@ int allspechandler(char specifier, va_list hoho)
 		charactCt += printhexd(va_arg(hoho, unsigned int), 16, (specifier == 'X'));
 	else if (specifier == 'o')
 		charactCt += printoct(va_arg(hoho, unsigned int));
+	else
+		charactCt += write(1, &specifier, 1);
 
 	return (charactCt);
 }
