@@ -23,8 +23,9 @@ int allspechandler(char specifier, va_list hoho)
 	else if (specifier == 'u')
 		characterCtr += printun(va_arg(hoho, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
-		characterCtr += printhexd(va_arg(hoho, unsigned int), 16, (specifier == 'X');
+²		characterCtr += printhexd(va_arg(hoho, unsigned int), 16, (specifier == 'X');
+	else if (specifier == 'o')
+		characterCtr += printoct(va_arg(hoho, unsigned int));
 
 	return (characterCtr);
-
 }
