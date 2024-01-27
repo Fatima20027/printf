@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printrev - Prints a string in the opposite order
+ * @string: The string to be printed
+ *
+ * Return: The number of characters printed
+ */
+
 int printrev(char *string)
 {
 	int characterCtr = 0, l, i;
