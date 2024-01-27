@@ -4,18 +4,18 @@ int printrot(char *string)
 {
 	int characterCtr = 0;
 
-	char base;
-
 	while (*string != '\0')
 	{
-		if ((*string >= 'a' && *s <= 'z') || (*string >= 'A' && *strning <= 'Z'))
+		char base;
+
+		if ((*string >= 'a' && *string <= 'z') || (*string >= 'A' && *string <= 'Z'))
 		{
 			base = (*string >= 'a' && *string <= 'z') ? 'a' : 'A';
 			characterCtr += write(1, &(((13 + *string - base) % 26) + base), 1);
 		}
 		else
 		{
-			characterCtr += write(1, s, 1);
+			characterCtr += write(1, string, 1);
 		}
 
 		++string;
