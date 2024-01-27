@@ -19,6 +19,7 @@ int printinteger(int number);
 int printun(unsigned int number);
 int printhexd(unsigned int number, int base, int uppercase);
 int printoct(unsigned int number);
+int printrev(char *string);
 
 #endif
 
