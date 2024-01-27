@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printun - Prints an unsigned integer
+ * @number: The number to be printed
+ *
+ * Return: The number of characters printed
+ */
+
 int printun(unsigned int number)
 {
 	int characterCtr = 0;
