@@ -15,7 +15,11 @@ int _printf(const char *format, ...)
 
 	va_start(hoho, format);
 
+	if (format == NULL)
+		return (-1);
+
 	characterCtr = 0;
+
 
 	while (*format != '\0')
 	{
