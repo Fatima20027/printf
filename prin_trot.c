@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printrot - Rotates the character by 13 positions.
+ * @string: The string to be handled.
+ *
+ * Return: The number of printed characters.
+ */
+
 int printrot(char *string)
 {
 
