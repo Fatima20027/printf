@@ -28,6 +28,8 @@ int allspechandler(char specifier, va_list hoho)
 		charactCt += printoct(va_arg(hoho, unsigned int));
 	else if (specifier == 'r')
 		charactCt += printrev(va_arg(hoho, char*));
+	else if (specifier == 'R')
+		charactCt += printrot(va_arg(hoho, char*));
 	else
 		charactCt += write(1, &specifier, 1);
 
