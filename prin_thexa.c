@@ -14,7 +14,7 @@ int printhexd(unsigned int number, int base, int uppercase)
 	char hexCharacters[] = "0123456789abcdef";
 	char hexaDigit;
 
-	if (uppercase == True)
+	if (uppercase)
 	{
 		hexCharacters[10] = 'A';
 		hexCharacters[11] = 'B';
