@@ -34,8 +34,6 @@ int _printf(const char *format, ...)
 		++format;
 	}
 
-	++characterCtr;
-
 	va_end(hoho);
 
 	return (characterCtr);
