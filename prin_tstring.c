@@ -11,7 +11,7 @@ int printstring(char *s)
 {
 	int characterCtr = 0;
 
-	if (*s == NULL)
+	if (s == NULL)
 		return (puts("(null)"));
 	while (*s != '\0')
 	{
