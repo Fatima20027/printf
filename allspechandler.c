@@ -10,22 +10,22 @@
 
 int allspechandler(char specifier, va_list hoho)
 {
-	int characterCtr = 0;
+	int charactCt = 0;
 
 	if (specifier == 'c')
-		characterCtr += printchr(va_arg(hoho, int));
+		charactCt += printchr(va_arg(hoho, int));
 	else if (specifier == 's')
-		characterCtr += printstring(va_arg(hoho, char*));
+		charactCt += printstring(va_arg(hoho, char*));
 	else if (specifier == '%')
-		characterCtr += printchr((int)'%');
+		charactCt += printchr((int)'%');
 	else if (specifier == 'i' || specifier == 'd')
-		characterCtr += printinteger(va_arg(hoho, int));
+		charactCt += printinteger(va_arg(hoho, int));
 	else if (specifier == 'u')
-		characterCtr += printun(va_arg(hoho, unsigned int));
+		charactCt += printun(va_arg(hoho, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
-		characterCtr += printhexd(va_arg(hoho, unsigned int), 16, (specifier == 'X'));
+		charactCt += printhexd(va_arg(hoho, unsigned int), 16, (specifier == 'X'));
 	else if (specifier == 'o')
-		characterCtr += printoct(va_arg(hoho, unsigned int));
+		charactCt += printoct(va_arg(hoho, unsigned int));
 
-	return (characterCtr);
+	return (charactCt);
 }
