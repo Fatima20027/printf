@@ -2,6 +2,7 @@
 
 int printrot(char *string)
 {
+
 	int characterCtr = 0;
 
 	while (*string != '\0')
@@ -10,8 +11,12 @@ int printrot(char *string)
 
 		if ((*string >= 'a' && *string <= 'z') || (*string >= 'A' && *string <= 'Z'))
 		{
+			char rotatedChar;
+
 			base = (*string >= 'a' && *string <= 'z') ? 'a' : 'A';
-			characterCtr += write(1, &(((13 + *string - base) % 26) + base), 1);
+			rotatedChar = ((13 + *string - base) % 26) + base;
+
+			characterCtr += write(1, &rotatedChar, 1);
 		}
 		else
 		{
