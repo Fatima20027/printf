@@ -1,11 +1,17 @@
 #include "main.h"
 
+/**
+ * printhexd - Prints a number's hexadecimal form.
+ * @number: The number to be printed in hexadecimal
+ * @base: the basis of the number system, which is normally 16 in hexadecimal
+ * @uppercase: A flag indicates if uppercase letters (1) or (0) should be used
+ * Return: The number of characters printed
+ */
+
 int printhexd(unsigned int number, int base, int uppercase)
 {
 	int characterCtr = 0;
-
 	char hexCharacters[] = "0123456789abcdef";
-
 	char hexaDigit;
 
 	if (uppercase == True)
