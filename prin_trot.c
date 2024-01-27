@@ -1,6 +1,6 @@
 #include "main.h"
 
-int printrot13(char *string)
+int printrot(char *string)
 {
 	int characterCtr = 0;
 
