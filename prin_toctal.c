@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * printoct - generates an octal formatted unsigned integer.
- * @number: The number to be printed
- *
- * Return: The number of printed characters
- */
+* printoct - generates an octal formatted unsigned integer.
+* @number: The number to be printed
+*
+* Return: The number of printed characters
+*/
 
 int printoct(unsigned int number)
 {
