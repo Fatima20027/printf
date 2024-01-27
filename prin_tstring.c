@@ -12,7 +12,7 @@ int printstring(char *s)
 	int characterCtr = 0;
 
 	if (*s == NULL)
-		puts("(null)");
+		return (puts("(null)"));
 	while (*s != '\0')
 	{
 		characterCtr += write(1, s, 1);
