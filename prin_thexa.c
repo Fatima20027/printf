@@ -23,7 +23,7 @@ int printhexd(unsigned int number, int base, int uppercase)
 
 	hexaDigit = hexCharacters[number % base];
 
-	characterCtr += write(1, &hexDigit, 1);
+	characterCtr += write(1, &hexaDigit, 1);
 
 	return (characterCtr);
 }
