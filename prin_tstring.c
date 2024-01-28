@@ -7,17 +7,17 @@
 * Return: Number of characters printed
 */
 
-int printstring(char *s)
+int printstring(char *string)
 {
 	int characterCtr = 0;
 
-	if (s == NULL)
+	if (string == NULL)
 		return (puts("(null)"));
-	while (*s)
+	while (*string)
 	{
-		printchr((int)*str);
+		printchr((int)*string);
 		++characterCtr;
-		++s;
+		++string;
 	}
 	return (characterCtr);
 }
