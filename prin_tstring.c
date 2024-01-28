@@ -15,8 +15,7 @@ int printstring(char *string)
 		return (puts("(null)"));
 	while (*string)
 	{
-		printchr((int)*string);
-		++characterCtr;
+		characterCtr += write(1, string, 1);
 		++string;
 	}
 	return (characterCtr);
