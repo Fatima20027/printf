@@ -13,9 +13,10 @@ int printstring(char *s)
 
 	if (s == NULL)
 		return (puts("(null)"));
-	while (*s != '\0')
+	while (*s)
 	{
-		characterCtr += write(1, s, 1);
+		printchr((int)*str);
+		++characterCtr;
 		++s;
 	}
 	return (characterCtr);
