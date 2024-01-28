@@ -15,7 +15,7 @@ int allspechandler(char specifier, va_list hoho)
 	if (specifier == 'c')
 		charactCt += printchr(va_arg(hoho, int));
 	else if (specifier == 's')
-		charactCt += printstring(va_arg(hoho, char*));
+		charactCt += printstring(va_arg(hoho, char *));
 	else if (specifier == '%')
 		charactCt += printchr((int)'%');
 	else if (specifier == 'i' || specifier == 'd')
@@ -30,8 +30,8 @@ int allspechandler(char specifier, va_list hoho)
 		charactCt += printrev(va_arg(hoho, char*));
 	else if (specifier == 'R')
 		charactCt += printrot(va_arg(hoho, char*));
-	else
-		charactCt += write(1, &specifier, 1);
+	/*else
+		charactCt += write(1, &specifier, 1);*/
 
 	return (charactCt);
 }
