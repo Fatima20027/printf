@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * printbinary - Prints a binary form of an unsigned integer.
+ * printbin - Prints a binary form of an unsigned integer.
  * @number: The number to be printed in binary.
  *
  * Return: The number of characters printed.
  */
 
-int printbinary(unsigned int number)
+int printbin(unsigned int number)
 {
 	int characterCtr = 0, index, i;
 
