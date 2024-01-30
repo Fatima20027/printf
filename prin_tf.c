@@ -9,7 +9,7 @@
 
 int _printf(const char *format, ...)
 {
-	int characterCtr;
+	int charactCt;
 
 	va_list hohos;
 
@@ -18,23 +18,23 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 
-	characterCtr = 0;
+	charactCt = 0;
 
 
 	while (*format != '\0')
 	{
 		if (*format == '%')
 		{
-			characterCtr += allspechandler(*(++format), hohos);
+			charactCt += allspechandler(*(++format), hohos);
 		}
 		else
 		{
-			characterCtr += write(1, format, 1);
+			charactCt += write(1, format, 1);
 		}
 		++format;
 	}
 
 	va_end(hohos);
 
-	return (characterCtr);
+	return (charactCt);
 }
