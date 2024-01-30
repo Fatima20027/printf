@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* printoct - generates an octal formatted unsigned integer.
+* printoct - Prints an unsigned integer in octal format.
 * @number: The number to be printed
 *
 * Return: The number of printed characters
