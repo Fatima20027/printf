@@ -8,14 +8,14 @@
 */
 int printstring(char *string)
 {
-	int characterCtr = 0;
+	int charactCt = 0;
 
 	if (string == NULL)
 		return (puts("(null)"));
 	while (*string)
 	{
-		characterCtr += write(1, string, 1);
+		charactCt += write(1, string, 1);
 		++string;
 	}
-	return (characterCtr);
+	return (charactCt);
 }
