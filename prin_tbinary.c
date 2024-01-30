@@ -4,7 +4,7 @@
  * printbin - Prints a binary form of an unsigned integer.
  * @number: The number to be printed in binary.
  *
- * Return: The number of characters printed.
+ * Return: The number of printed characters.
  */
 
 int printbin(unsigned int number)
