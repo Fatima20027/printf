@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _printf - Outputs formatted print to the standard output stream (stdout)
- * @format: A character string containing format specifiers
+ * _printf - Outputs formatted print to the standard output stream (stdout).
+ * @format: A character string containing format specifiers.
  *
- * Return: The number of printed characters
+ * Return: The number of printed characters.
  */
 
 int _printf(const char *format, ...)
