@@ -9,7 +9,7 @@
 
 int printrev(char *string)
 {
-	int characterCtr = 0, l, i;
+	int charactCt = 0, l, i;
 
 	l = 0;
 
@@ -18,7 +18,7 @@ int printrev(char *string)
 
 	for (i = l - 1; i >= 0; i--)
 
-		characterCtr += write(1, &string[i], 1);
+		charactCt += write(1, &string[i], 1);
 
-	return (characterCtr);
+	return (charactCt);
 }
