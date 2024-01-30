@@ -9,13 +9,13 @@
 
 int printbin(unsigned int number)
 {
-	int characterCtr = 0, index, i;
+	int charactCt = 0, index, i;
 
 	char digit;
 
 	if (number == 0)
 	{
-		characterCtr += write(1, "0", 1);
+		charactCt += write(1, "0", 1);
 	}
 	else
 	{
@@ -31,9 +31,9 @@ int printbin(unsigned int number)
 		}
 		for (i = index - 1; i >= 0; i--)
 		{
-			characterCtr += write(1, &buff[i], 1);
+			charactCt += write(1, &buff[i], 1);
 		}
 	}
 
-	return (characterCtr);
+	return (charactCt);
 }
