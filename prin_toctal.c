@@ -9,16 +9,16 @@
 
 int printoct(unsigned int number)
 {
-	int characterCtr = 0;
+	int charactCt = 0;
 
 	char octaldigit;
 
 	if (number / 8 != 0)
-		characterCtr += printoct(number / 8);
+		charactCt += printoct(number / 8);
 
 	octaldigit = '0' + number % 8;
 
-	characterCtr += write(1, &octaldigit, 1);
+	charactCt += write(1, &octaldigit, 1);
 
-	return (characterCtr);
+	return (charactCt);
 }
