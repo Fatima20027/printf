@@ -3,7 +3,7 @@
 /**
  * allspechandler - Handles a specific specifier
  * @specifier: The specifier character
- * @hohos: The va_list containing the argument
+ * @hohoss: The va_list containing the argument
  *
  * Return: The number of characters processed
  */
