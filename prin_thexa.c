@@ -10,7 +10,7 @@
 
 int printhexd(unsigned int number, int base, int uppercase)
 {
-	int characterCtr = 0;
+	int charactCt = 0;
 
 	char hexCharacters[] = "0123456789abcdef";
 
@@ -27,11 +27,11 @@ int printhexd(unsigned int number, int base, int uppercase)
 	}
 
 	if (number / 10 != 0)
-		characterCtr += printhexd(number / 10, base, uppercase);
+		charactCt += printhexd(number / 10, base, uppercase);
 
 	hexaDigit = hexCharacters[number % base];
 
-	characterCtr += write(1, &hexaDigit, 1);
+	charactCt += write(1, &hexaDigit, 1);
 
-	return (characterCtr);
+	return (charactCt);
 }
