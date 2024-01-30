@@ -11,9 +11,9 @@ int _printf(const char *format, ...)
 {
 	int characterCtr;
 
-	va_list hoho;
+	va_list hohos;
 
-	va_start(hoho, format);
+	va_start(hohos, format);
 
 	if (format == NULL)
 		return (-1);
@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
-			characterCtr += allspechandler(*(++format), hoho);
+			characterCtr += allspechandler(*(++format), hohos);
 		}
 		else
 		{
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 		++format;
 	}
 
-	va_end(hoho);
+	va_end(hohos);
 
 	return (characterCtr);
 }
